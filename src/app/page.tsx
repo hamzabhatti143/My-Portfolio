@@ -1,101 +1,363 @@
+import Footer from "@/components/Footer";
+import Header from "@/components/Header";
+import Started from "@/components/Started";
 import Image from "next/image";
+import Link from "next/link";
+import { FaCalendarCheck } from "react-icons/fa6";
+import { FaEnvelope } from "react-icons/fa6";
+import { IoMdCheckmark } from "react-icons/io";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <>
+      {/* Hero + Header section start */}
+      <div className="bg-[#28293E] h-auto md:h-auto lg:h-[560px]">
+        <Header />
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+        <div className="w-full mt-0 md:mt-10 lg:mt-20 flex flex-col md:flex-row px-10 md:px-20 lg:px-32">
+          <div className="w-full md:w-1/2 mb-4 md:mb-0">
+            <h5 className="text-base text-[#EF6D58]">Gabriel Pires</h5>
+            <h1 className="text-[#FFFFFF] leading-[45px] md:leading-[48px] lg:leading-[70px] text-[37px] md:text-[45px] lg:text-[72px] font-bold">
+              The Simple, Clean Design
+            </h1>
+            <p className="text-[#FFFFFF] mt-4 tracking-widest mb-8">
+              Agency provides a full service range including technical skills,
+              design, business understanding.
+            </p>
+            <Link
+              href="/portfolio"
+              className="border-2 text-white border-[#EF6D58] bg-[#EF6D58]
+           px-4 py-4 rounded-lg hover:bg-transparent"
+            >
+              <button>See My Work</button>
+            </Link>
+          </div>
+          <div className="w-full md:w-1/2">
             <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
+              src={"/images/pic.png"}
+              alt="Hero Image"
+              width={350}
+              height={100}
+              className="ml-0 md:ml-20 lg:ml-44"
             />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+      </div>
+      {/* Hero + Header section start */}
+
+      {/* Service section start */}
+      <h5 className="text-[#EF6D58] text-center uppercase mt-10 font-semibold">
+        Service
+      </h5>
+      <h2 className="text-center font-bold text-4xl md:text-[50px] lg:text-[56px] leading-none">
+        How I Can Help <br /> You With
+      </h2>
+
+      <div className="w-full flex flex-col md:flex-row px-10 md:px-32 mt-10">
+        <div className="w-11/12 md:w-1/2">
+          <div className="flex flex-col md:flex-row items-center gap-4">
+            <div className="bg-[#EF6C57] w-16 h-16 rounded-full mt-4 md:mt-0">
+              <Image
+                src={"/images/shape.png"}
+                alt="shape"
+                width={50}
+                height={50}
+                className="py-4 pl-4"
+              />
+            </div>
+            <h4 className="text-4xl md:text-2xl font-bold">Design</h4>
+          </div>
+          <p className="w-full pt-10 px-0 text-justify md:px-6">
+            Agency is a business you hire to outsource your digital marketing
+            efforts, instead of handling in-house.
+          </p>
+
+          <div className="px-6 pt-8 flex gap-4 items-center">
+            <div className="cursor-pointer rounded-full bg-white hover:bg-[#EF6C57] hover:text-white p-2 w-10 flex justify-center text-[#EF6C57]">
+              +
+            </div>
+            <Link
+              href={"/contact"}
+              className="text-black text-base 
+            hover:border-[#EF6C57] hover:border-2 hover:px-2 hover:rounded-lg"
+            >
+              <button>Learn More</button>
+            </Link>
+          </div>
+        </div>
+        <div className="w-11/12 md:w-1/2">
+          <div className="flex flex-col md:flex-row items-center gap-4">
+            <div className="bg-[#EF6C57] w-16 h-16 rounded-full mt-4 md:mt-0">
+              <Image
+                src={"/images/shape.png"}
+                alt="shape"
+                width={50}
+                height={50}
+                className="py-4 pl-4"
+              />
+            </div>
+            <h4 className="text-4xl md:text-2xl font-bold">Development</h4>
+          </div>
+          <p className="w-full pt-10 px-0 text-justify md:px-6">
+            Hire to outsource your digital marketing efforts, instead of
+            handling in-house can provide your business.
+          </p>
+
+          <div className="px-6 pt-8 mb-4 flex gap-4 items-center">
+            <div className="cursor-pointer rounded-full bg-white hover:bg-[#EF6C57] hover:text-white p-2 w-10 flex justify-center text-[#EF6C57]">
+              +
+            </div>
+            <Link
+              href={"/contact"}
+              className="text-black text-base 
+            hover:border-[#EF6C57] hover:border-2 hover:px-2 hover:rounded-lg"
+            >
+              <button>Learn More</button>
+            </Link>
+          </div>
+        </div>
+      </div>
+      {/* Service section end */}
+
+      {/* Portfolio section start */}
+      <div className="w-full mt-0 md:mt-10 h-auto md:h-auto lg:h-96 flex flex-col gap-4 px-6 md:px-4 lg:px-16  bg-[#28293E]">
+        <h5 className="text-base text-[#EF6D58] pt-20">Portfolio</h5>
+        <div className="w-full flex flex-row justify-between items-center">
+          <h2 className="text-lg md:text-[56px] text-white font-bold">
+            Latest Work
+          </h2>
+          <Link
+            href="/portfolio"
+            className="border-2 text-white border-white bg-transparent
+           px-4 py-2  rounded-lg  hover:text-[#EF6D58] active:border-[#EF6D58]
+            active:bg-white focus:bg-white focus:text-[#EF6D58] hover:bg-white"
+          >
+            <button>Explore More</button>
+          </Link>
+        </div>
+
+        <div className="w-full flex flex-wrap mb-6 justify-around items-center gap-4">
           <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
+            src={"/images/port-6.png"}
+            alt="Portfolio"
+            width={350}
+            height={500}
           />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
           <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
+            src={"/images/port-3.png"}
+            alt="Portfolio"
+            width={350}
+            height={500}
           />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
           <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
+            src={"/images/port-4.png"}
+            alt="Portfolio"
+            width={350}
+            height={500}
           />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+        </div>
+      </div>
+      {/* Portfolio section end */}
+
+      {/* Web sec section start */}
+
+      <div className="w-full p-6 md:p-12 lg:p-20 flex flex-wrap md:flex-wrap lg:flex-nowrap">
+        <div className="w-full md:w-1/2 flex justify-center items-center">
+          <Image
+            src={"/images/pic2.png"}
+            alt="about"
+            width={400}
+            height={500}
+            className=""
+          />
+        </div>
+        <div className="w-full flex flex-col justify-center pl-0 md:pl-12 lg:pl-20 md:w-1/2 mb-4 md:mb-0">
+          <h5 className="text-base text-[#EF6D58] ">Gabriel Pires</h5>
+          <h1
+            className="leading-[45px] md:leading-[48px] 
+            lg:leading-[70px] text-[37px] md:text-[45px] lg:text-[56px] font-bold pr-4"
+          >
+            Professional Web Designer
+          </h1>
+          <h4 className="text-xl">Provides a full service range</h4>
+          <p className="text-grey mt-4 tracking-widest mb-8 ">
+            Ability to put themselves in the merchants shoes. It is meant to
+            partner on the long run, and work as an extension of the merchants
+            team.
+          </p>
+          <Link
+            href="/about"
+            className=" text-black text-center font-bold bg-white
+           px-4 py-4 rounded-lg w-2/4 lg:w-1/4 hover:bg-[#EF6D58] hover:text-white"
+          >
+            <button>About Me</button>
+          </Link>
+        </div>
+      </div>
+
+      <div className="w-full px-4 md:px-20 gap-4 flex flex-col md:flex-row">
+        <div
+          className="flex items-center gap-4 w-full md:w-1/2 cursor-pointer
+         border border-[#EF6D58] p-6 hover:bg-[#EF6D58] hover:text-white"
+        >
+          <div className="rounded-full bg-[#EF6D58] p-8 w-20 flex justify-center">
+            <FaCalendarCheck className="fill-white w-10" />
+          </div>
+          <div>
+            <h3 className="text-[40px] font-bold">42%</h3>
+            <p>Years of experience</p>
+          </div>
+        </div>
+
+        <div
+          className="flex items-center gap-4 w-full md:w-1/2 cursor-pointer
+         border border-[#EF6D58] p-6 hover:bg-[#EF6D58] hover:text-white"
+        >
+          <div className="rounded-full bg-[#EF6D58] p-8 w-20 flex justify-center">
+            <FaEnvelope className="fill-white w-10" />
+          </div>
+          <div>
+            <h3 className="text-[40px] font-bold">73+</h3>
+            <p>Projects Done</p>
+          </div>
+        </div>
+      </div>
+
+      {/* Web sec section end */}
+
+      {/* Features section start */}
+
+      <div className="w-full bg-[#28293E] mt-6 p-6 md:p-12 lg:p-20 flex flex-wrap md:flex-wrap lg:flex-nowrap">
+        <div
+          className="w-full order-2 md:order-1 flex flex-col justify-center
+         pl-0 md:pl-12 lg:pl-20 md:w-1/2 mb-4 md:mb-0"
+        >
+          <h5 className="text-base text-[#EF6D58] ">Features</h5>
+          <h2
+            className="leading-[45px] md:leading-[48px] text-white 
+            lg:leading-[70px] text-[37px] md:text-[45px]  lg:text-[56px] font-bold pr-4 md:pr-6 lg:pr-16"
+          >
+            Give Your Site A New Look
+          </h2>
+          <p className="text-grey mt-4 tracking-widest mb-8 text-white">
+            Service range including technical skills, design, business
+            understanding.
+          </p>
+
+          <div className="space-y-4">
+            <div className="flex gap-4 items-center">
+              <div className="rounded-full bg-[#EF6D58] p-2 w-8 flex justify-center">
+                <IoMdCheckmark className="fill-white w-10" />
+              </div>
+              <p className="text-white">Range including technical skills</p>
+            </div>
+
+            <div className="flex gap-4 items-center">
+              <div className="rounded-full bg-[#EF6D58] p-2 w-8 flex justify-center">
+                <IoMdCheckmark className="fill-white w-10" />
+              </div>
+              <p className="text-white">Business understanding</p>
+            </div>
+
+            <div className="flex gap-4 items-center">
+              <div className="rounded-full bg-[#EF6D58] p-2 w-8 flex justify-center">
+                <IoMdCheckmark className="fill-white w-10" />
+              </div>
+              <p className="text-white">Partner on the long run</p>
+            </div>
+          </div>
+        </div>
+
+        <div className="w-full order-1 md:order-2 md:w-1/2 flex justify-center items-center">
+          <Image
+            src={"/images/feature.png"}
+            alt="features"
+            width={400}
+            height={500}
+            className=""
+          />
+        </div>
+      </div>
+
+      {/* Features section end */}
+
+      {/* Started Start */}
+
+      <Started />
+
+      {/* Started End */}
+
+      {/* Contact section start */}
+
+      <div className="w-full flex flex-col md:flex-row items-center bg-[#28293E] h-auto md:h-[550px]">
+        <div className="w-full md:w-1/2 pt-10">
+          <div className="w-3/4 h-[450px] rounded-lg mx-auto md:mx-20 bg-white">
+            <h4 className="text-2xl font-bold px-8 pt-8">Get In touch</h4>
+            <div className="px-8 pt-8 space-y-6">
+              <input
+                type="email"
+                placeholder="Enter Your email"
+                className="w-full rounded p-2 border-2 border-black"
+                id=""
+              />
+              <input
+                type="text"
+                placeholder="Subject"
+                className="w-full rounded p-2 border-2 border-black"
+                id=""
+              />
+              <textarea
+                name=""
+                id=""
+                placeholder="Message"
+                className="w-full h-28 rounded p-2 border-2 border-black"
+              ></textarea>
+              <Link
+              href="/"
+              className="border-2 text-white border-[#EF6D58] bg-[#EF6D58]
+           px-4 py-2 rounded-lg hover:bg-transparent hover:text-[#EF6D58] font-bold ml-0 md:ml-72"
+            >
+              <button className="mt-6">Submit Now</button>
+            </Link>
+            </div>
+          </div>
+        </div>
+        <div className="w-full md:w-1/2 p-4 text-center md:text-start">
+          <h5 className="text-base uppercase text-[#EF6D58]">Contact</h5>
+          <h2 className="text-white text-[56px] font-bold">Contact Me</h2>
+          <p className="text-white w-full md:w-3/4 leading-7 tracking-wider">
+            A digital agency is a business you hire to outsource your digital
+            marketing efforts, instead of handling in-house.
+          </p>
+        </div>
+      </div>
+
+      {/* Contact section end */}
+      {/* Project Start */}
+
+      <div className="w-full flex flex-col md:flex-row justify-center items-center">
+        <div className="w-full md:w-1/2 px-16">
+          <h5 className="text-[#EF6D58]">Gabriel Pires</h5>
+          <h2 className="text-3xl md:text-[56px] font-bold pr-10 leading-[50px]">
+            Help To Build Your Dream Project
+          </h2>
+          <p></p>
+        </div>
+        <div className="w-full md:w-1/2 flex justify-center items-center">
+          <Image
+            src={"/images/pic3.png"}
+            alt="Project"
+            width={400}
+            height={300}
+          />
+        </div>
+      </div>
+
+      {/* Project End */}
+      {/* Footer Start */}
+
+      <Footer />
+      {/* Footer end */}
+    </>
   );
 }
