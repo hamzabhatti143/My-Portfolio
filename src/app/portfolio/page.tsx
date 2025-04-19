@@ -1,3 +1,4 @@
+import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import PortfolioCards from "@/components/PortfolioCards";
 import React from "react";
@@ -22,6 +23,8 @@ const page = () => {
       {/* Hero + Header section start */}
 
       <PortfolioCards />
+
+      <Footer />
     </>
   );
 };
