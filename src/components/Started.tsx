@@ -14,7 +14,7 @@ const Started = () => {
             </div>
             <div className='mt-16 flex flex-col justify-center px-6 md:px-10 lg:px-16 gap-2'>
             <h5 className="text-base text-[#EF6D58]">Get Started</h5>
-            <h4 className='text-lg md:text-2xl lg:text-3xl font-bold'>I Help Companies Move Faster</h4>
+            <h4 className='text-lg md:text-2xl text-black  lg:text-3xl font-bold'>I Help Companies Move Faster</h4>
             <Link
               href="/portfolio"
               className="border-2 text-white border-[#EF6D58] bg-[#EF6D58] text-center
@@ -24,7 +24,7 @@ const Started = () => {
             </Link>
             </div>
         </div>
-        <div className='w-full md:w-1/3 px-6 md:px-10 lg:px-16'>
+        <div className='w-full text-black md:w-1/3 px-6 md:px-10 lg:px-16'>
         <p>Put themselves in the merchants shoes. It is meant to partner on the long run.</p>
         </div>
         <div className='w-full md:w-1/3'>

@@ -49,7 +49,7 @@ export default function Home() {
       <h5 className="text-[#EF6D58] text-center uppercase mt-10 font-semibold">
         Service
       </h5>
-      <h2 className="text-center font-bold text-4xl md:text-[50px] lg:text-[56px] leading-none">
+      <h2 className="text-center text-black font-bold text-4xl md:text-[50px] lg:text-[56px] leading-none">
         How I Can Help <br /> You With
       </h2>
 
@@ -65,9 +65,9 @@ export default function Home() {
                 className="py-4 pl-4"
               />
             </div>
-            <h4 className="text-4xl md:text-2xl font-bold">Design</h4>
+            <h4 className="text-4xl md:text-2xl text-black font-bold">Design</h4>
           </div>
-          <p className="w-full pt-10 px-0 text-justify md:px-6">
+          <p className="w-full pt-10 px-0 text-justify md:px-6 text-black">
             Agency is a business you hire to outsource your digital marketing
             efforts, instead of handling in-house.
           </p>
@@ -78,8 +78,8 @@ export default function Home() {
             </div>
             <Link
               href={"/contact"}
-              className="text-black text-base 
-            hover:border-[#EF6C57] hover:border-2 hover:px-2 hover:rounded-lg"
+              className="text-base 
+            hover:border-[#EF6C57] hover:border-2 text-black hover:px-2 hover:rounded-lg"
             >
               <button>Learn More</button>
             </Link>
@@ -96,9 +96,9 @@ export default function Home() {
                 className="py-4 pl-4"
               />
             </div>
-            <h4 className="text-4xl md:text-2xl font-bold">Development</h4>
+            <h4 className="text-4xl md:text-2xl font-bold text-black">Development</h4>
           </div>
-          <p className="w-full pt-10 px-0 text-justify md:px-6">
+          <p className="w-full pt-10 px-0 text-justify text-black md:px-6">
             Hire to outsource your digital marketing efforts, instead of
             handling in-house can provide your business.
           </p>
@@ -109,8 +109,8 @@ export default function Home() {
             </div>
             <Link
               href={"/contact"}
-              className="text-black text-base 
-            hover:border-[#EF6C57] hover:border-2 hover:px-2 hover:rounded-lg"
+              className="text-base 
+            hover:border-[#EF6C57] text-black hover:border-2 hover:px-2 hover:rounded-lg"
             >
               <button>Learn More</button>
             </Link>
@@ -175,12 +175,12 @@ export default function Home() {
           <h5 className="text-base text-[#EF6D58] ">Gabriel Pires</h5>
           <h1
             className="leading-[45px] md:leading-[48px] 
-            lg:leading-[70px] text-[37px] md:text-[45px] lg:text-[56px] font-bold pr-4"
+            lg:leading-[70px] text-[37px] text-black  md:text-[45px] lg:text-[56px] font-bold pr-4"
           >
             Professional Web Designer
           </h1>
-          <h4 className="text-xl">Provides a full service range</h4>
-          <p className="text-grey mt-4 tracking-widest mb-8 ">
+          <h4 className="text-xl text-black ">Provides a full service range</h4>
+          <p className="text-grey mt-4 text-black  tracking-widest mb-8 ">
             Ability to put themselves in the merchants shoes. It is meant to
             partner on the long run, and work as an extension of the merchants
             team.
@@ -195,7 +195,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="w-full px-4 md:px-20 gap-4 flex flex-col md:flex-row">
+      <div className="w-full px-4 md:px-20 gap-4 flex flex-col md:flex-row">  
         <div
           className="flex items-center gap-4 w-full md:w-1/2 cursor-pointer
          border border-[#EF6D58] p-6 hover:bg-[#EF6D58] hover:text-white"
@@ -204,8 +204,8 @@ export default function Home() {
             <FaCalendarCheck className="fill-white w-10" />
           </div>
           <div>
-            <h3 className="text-[40px] font-bold">42%</h3>
-            <p>Years of experience</p>
+            <h3 className="text-[40px] text-black  font-bold">42%</h3>
+            <p className="text-black ">Years of experience</p>
           </div>
         </div>
 
@@ -217,8 +217,8 @@ export default function Home() {
             <FaEnvelope className="fill-white w-10" />
           </div>
           <div>
-            <h3 className="text-[40px] font-bold">73+</h3>
-            <p>Projects Done</p>
+            <h3 className="text-[40px] text-black  font-bold">73+</h3>
+            <p className="text-black ">Projects Done</p>
           </div>
         </div>
       </div>
@@ -338,7 +338,7 @@ export default function Home() {
       <div className="w-full flex flex-col md:flex-row justify-center items-center">
         <div className="w-full md:w-1/2 px-16">
           <h5 className="text-[#EF6D58]">Gabriel Pires</h5>
-          <h2 className="text-3xl md:text-[56px] font-bold pr-10 leading-[50px]">
+          <h2 className="text-3xl text-black md:text-[56px] font-bold pr-10 leading-[50px]">
             Help To Build Your Dream Project
           </h2>
           <p></p>
