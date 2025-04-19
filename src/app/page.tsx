@@ -324,7 +324,7 @@ export default function Home() {
         </div>
         <div className="w-full md:w-1/2 p-4 text-center md:text-start">
           <h5 className="text-base uppercase text-[#EF6D58]">Contact</h5>
-          <h2 className="text-white text-[56px] font-bold">Contact Me</h2>
+          <h2 className="text-white text-3xl md:text-[56px] font-bold">Contact Me</h2>
           <p className="text-white w-full md:w-3/4 leading-7 tracking-wider">
             A digital agency is a business you hire to outsource your digital
             marketing efforts, instead of handling in-house.
@@ -336,9 +336,9 @@ export default function Home() {
       {/* Project Start */}
 
       <div className="w-full flex flex-col md:flex-row justify-center items-center">
-        <div className="w-full md:w-1/2 px-16">
+        <div className="w-full md:w-1/2 px-16 mt-6 md:mt-0">
           <h5 className="text-[#EF6D58]">Gabriel Pires</h5>
-          <h2 className="text-3xl text-black md:text-[56px] font-bold pr-10 leading-[50px]">
+          <h2 className="text-3xl text-black md:text-[56px] font-bold pr-0 md:pr-10 leading-[50px]">
             Help To Build Your Dream Project
           </h2>
           <p></p>
