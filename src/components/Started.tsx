@@ -6,7 +6,7 @@ import { IoIosGift } from "react-icons/io";
 const Started = () => {
   return (
     <>
-      <div className='w-full flex flex-col md:flex-row justify-center items-center gap-4'>
+      <div data-aos="fade-down" className='w-full flex flex-col md:flex-row justify-center items-center gap-4'>
         <div className='w-full md:w-1/3'>
             <div className='px-6 md:px-10 lg:px-16'>
                 <Image src={"/images/Star.png"} alt='star' width={90} height={60} className='mt-[-40px] lg:mt-[-70px]'/>

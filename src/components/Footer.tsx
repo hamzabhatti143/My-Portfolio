@@ -28,13 +28,13 @@ const Footer = () => {
         </div>
 
         <div className="w-full md:w-1/3 mt-4 flex justify-center items-center gap-4">
-          <Link href={"/"}>
+          <Link href={"https://www.facebook.com/profile.php?id=100013869544839"}>
             <div className="rounded-full bg-[#EF6D58] p-2 w-8 flex justify-center">
               <FaFacebookF className="fill-white w-10" />
             </div>
           </Link>
 
-          <Link href={"/"}>
+          <Link href={"https://www.instagram.com/hamzabhatti_143/"}>
             <div className="rounded-full bg-[#EF6D58] p-2 w-8 flex justify-center">
               <FaInstagram className="fill-white w-10" />
             </div>
