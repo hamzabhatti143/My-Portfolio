@@ -25,16 +25,16 @@ const About = () => {
           height={400}
           className="rounded p-6 md:px-6 lg:p-0"
         />
-        <h5 data-aos="fade-down" className="text-base text-[#EF6D58] w-full md:w-1/2 px-6 mt-10 md:mt-20">
+        <h5 data-aos="fade-down" className="text-base text-black text-[#EF6D58] w-full md:w-1/2 px-6 mt-10 md:mt-20">
           Hamza Bhatti
         </h5>
         <h1 data-aos="fade-down"
-          className="leading-[45px] md:leading-[48px]  w-full md:w-1/2 px-6 tracking-wider
+          className="leading-[45px] md:leading-[48px] text-black w-full md:w-1/2 px-6 tracking-wider
             lg:leading-[70px] text-[37px] md:text-[45px] lg:text-[56px] font-bold"
         >
           Professional Web Designer
         </h1>
-        <p data-aos="fade-up" className="w-full md:w-1/2 px-6 leading-7 tracking-wider mt-4">
+        <p data-aos="fade-up" className="w-full text-black md:w-1/2 px-6 leading-7 tracking-wider mt-4">
           Ability to put themselves in the merchants shoes. It is meant to
           partner on the long run, and work as an extension of the merchants
           team. <br />
@@ -54,8 +54,8 @@ const About = () => {
             <FaCalendarCheck className="fill-white w-10" />
           </div>
           <div>
-            <h3 className="text-[40px] font-bold">42%</h3>
-            <p className="text-base md:text-xs lg:text-base">
+            <h3 className="text-[40px] font-bold text-black">42%</h3>
+            <p className="text-base md:text-xs text-black lg:text-base">
               Years of experience
             </p>
           </div>
@@ -63,14 +63,14 @@ const About = () => {
 
         <div
           className="flex items-center gap-4 w-full md:w-2/5 cursor-pointer
-         border border-[#EF6D58] p-6 hover:bg-[#EF6D58] hover:text-white"
+         border border-[#EF6D58]  p-6 hover:bg-[#EF6D58] hover:text-white"
         >
           <div className="rounded-full bg-[#EF6D58] p-6 w-16 flex justify-center">
             <FaEnvelope className="fill-white w-10" />
           </div>
           <div>
-            <h3 className="text-[40px] font-bold">73+</h3>
-            <p className="text-base md:text-xs lg:text-base">Projects Done</p>
+            <h3 className="text-[40px] font-bold text-black">73+</h3>
+            <p className="text-base md:text-xs lg:text-base text-black">Projects Done</p>
           </div>
         </div>
       </div>
