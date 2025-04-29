@@ -7,9 +7,9 @@ import "aos/dist/aos.css";
 const PortfolioCards = () => {
   useEffect(() => {
     Aos.init({
-      duration: 1000,
+      duration: 600,
       easing: "ease-in-out",
-      once: false,
+      once: true,
     });
   }, []);
   return (
