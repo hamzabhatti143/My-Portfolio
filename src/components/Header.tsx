@@ -77,33 +77,33 @@ const Header = () => {
   </div>
 
   {/* Mobile Navigation */}
-  <div className={`${isOpen ? "block" : "hidden"} md:hidden px-6 pb-4 justify-center`}>
-    <ul className="flex flex-col gap-4 items-start text-center w-full">
-      <li>
-        <Link href="/" className="hover:underline">
-          Home
-        </Link>
-      </li>
-      <li>
-        <Link href="/about" className="hover:underline">
-          About
-        </Link>
-      </li>
-      <li>
-        <Link href="/portfolio" className="hover:underline">
-          Portfolio
-        </Link>
-      </li>
-      <li>
-        <Link
-          href="/contact"
-          className="border-2 border-white px-4 py-2 rounded-lg hover:bg-white hover:text-[#28293E] transition"
-        >
-          Contact
-        </Link>
-      </li>
-    </ul>
-  </div>
+ <div className={`${isOpen ? "flex" : "hidden"} md:hidden px-6 pb-4 justify-center`}>
+  <ul className="flex flex-col items-center gap-4 text-center w-full">
+    <li>
+      <Link href="/" className="hover:underline">
+        Home
+      </Link>
+    </li>
+    <li>
+      <Link href="/about" className="hover:underline">
+        About
+      </Link>
+    </li>
+    <li>
+      <Link href="/portfolio" className="hover:underline">
+        Portfolio
+      </Link>
+    </li>
+    <li>
+      <Link
+        href="/contact"
+        className="border-2 border-white px-4 py-2 rounded-lg hover:bg-white hover:text-[#28293E] transition"
+      >
+        Contact
+      </Link>
+    </li>
+  </ul>
+</div>
 </nav>
     </>
   );
