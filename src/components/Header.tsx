@@ -7,19 +7,19 @@ const Header = () => {
 
   return (
     <>
-   <nav className="bg-[#28293E] text-white w-full relative">
-  <div className="w-full flex items-center justify-between px-6 md:px-16 lg:px-32 py-4">
+ <nav className="bg-[#28293E] text-white w-full">
+  <div className="flex items-center justify-between px-6 md:px-16 lg:px-32 py-4">
     {/* Logo */}
     <div className="flex items-center">
-      <Image
+     <Link href="/"> <Image
         src="/images/logo.png"
         alt="HB Logo"
         width={130}
         height={100}
-      />
+      /></Link>
     </div>
 
-    {/* Toggle Button for Small Screens */}
+    {/* Toggle Button for Mobile */}
     <div className="md:hidden">
       <button
         className="text-white focus:outline-none"
@@ -38,8 +38,8 @@ const Header = () => {
             strokeWidth="2"
             d={
               isOpen
-                ? "M6 18L18 6M6 6l12 12" // Cross icon
-                : "M4 6h16M4 12h16M4 18h16" // Hamburger icon
+                ? "M6 18L18 6M6 6l12 12"
+                : "M4 6h16M4 12h16M4 18h16"
             }
           />
         </svg>
@@ -51,9 +51,9 @@ const Header = () => {
   <div
     className={`${
       isOpen ? "block" : "hidden"
-    } md:flex md:items-center md:justify-between md:relative md:w-auto md:bg-transparent`}
+    } md:block px-6 md:px-16 lg:px-32 pb-4 md:pb-0`}
   >
-    <ul className="flex flex-col md:flex-row gap-4 md:gap-8 items-center px-6 md:px-16 lg:px-32 pb-4 md:pb-0">
+    <ul className="flex flex-col md:flex-row gap-4 md:gap-8 items-start md:items-center">
       <li>
         <Link href="/" className="hover:underline">
           Home
