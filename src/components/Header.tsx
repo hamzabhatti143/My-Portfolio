@@ -7,17 +7,46 @@ const Header = () => {
 
   return (
     <>
- <nav className="bg-[#28293E] text-white w-full">
+<nav className="bg-[#28293E] text-white w-full">
   <div className="flex items-center justify-between px-6 md:px-16 lg:px-32 py-4">
     {/* Logo */}
     <div className="flex items-center">
-     <Link href="/"> <Image
-        src="/images/logo.png"
-        alt="HB Logo"
-        width={130}
-        height={100}
-      /></Link>
+      <Link href="/">
+        <Image
+          src="/images/logo.png"
+          alt="HB Logo"
+          width={130}
+          height={100}
+        />
+      </Link>
     </div>
+
+    {/* Desktop Navigation */}
+    <ul className="hidden md:flex gap-8 items-center">
+      <li>
+        <Link href="/" className="hover:underline">
+          Home
+        </Link>
+      </li>
+      <li>
+        <Link href="/about" className="hover:underline">
+          About
+        </Link>
+      </li>
+      <li>
+        <Link href="/portfolio" className="hover:underline">
+          Portfolio
+        </Link>
+      </li>
+      <li>
+        <Link
+          href="/contact"
+          className="border-2 border-white px-4 py-2 rounded-lg hover:bg-white hover:text-[#28293E] transition"
+        >
+          Contact
+        </Link>
+      </li>
+    </ul>
 
     {/* Toggle Button for Mobile */}
     <div className="md:hidden">
@@ -47,13 +76,9 @@ const Header = () => {
     </div>
   </div>
 
-  {/* Navigation Links */}
-  <div
-    className={`${
-      isOpen ? "block" : "hidden"
-    } md:block px-6 md:px-16 lg:px-32 pb-4 md:pb-0`}
-  >
-    <ul className="flex flex-col md:flex-row gap-4 md:gap-8 items-start md:items-center">
+  {/* Mobile Navigation */}
+  <div className={`${isOpen ? "block" : "hidden"} md:hidden px-6 pb-4`}>
+    <ul className="flex flex-col gap-4 items-start">
       <li>
         <Link href="/" className="hover:underline">
           Home
