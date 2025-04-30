@@ -78,7 +78,7 @@ const Header = () => {
 
   {/* Mobile Navigation */}
   <div className={`${isOpen ? "block" : "hidden"} md:hidden px-6 pb-4`}>
-    <ul className="flex flex-col gap-4 items-start">
+    <ul className="flex flex-col gap-4 items-start justify-center text-center">
       <li>
         <Link href="/" className="hover:underline">
           Home
