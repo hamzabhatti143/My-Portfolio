@@ -8,7 +8,6 @@ import "aos/dist/aos.css";
 const Portfolio = () => {
   useEffect(() => {
     Aos.init({
-      duration: 1000,
       easing: "ease-in-out",
       once: false,
     });
@@ -17,7 +16,8 @@ const Portfolio = () => {
     <>
       <div
         data-aos="fade-up"
-        className="w-full mt-0 md:mt-10 h-auto md:h-auto lg:h-96 flex flex-col gap-4 px-6 md:px-4 lg:px-16  bg-[#28293E]"
+        data-aos-duration="1200"
+        className="w-full  aos-init aos-animate mt-0 md:mt-10 h-auto md:h-auto lg:h-96 flex flex-col gap-4 px-6 md:px-4 lg:px-16  bg-[#28293E]"
       >
         <h5 className="text-base text-[#EF6D58] pt-20">Portfolio</h5>
         <div className="w-full flex flex-row justify-between items-center">
