@@ -36,8 +36,7 @@ const PortfolioCards = () => {
   }, []);
   return (
     <>
-       <div data-aos="fade-up"
-        data-aos-duration="1200" className="flex flex-wrap justify-center gap-6 mt-10">
+       <div className="flex flex-wrap justify-center gap-6 mt-10">
         {portfolioData.map((item, index) => (
           <div
             key={index}
